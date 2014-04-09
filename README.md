@@ -1,7 +1,7 @@
 ###Alpha Synapse
 
-**Requirements:** None
-**Limitations:** None
+**Requirements:** None  
+**Limitations:** None  
 
 ![EDIT THIS LINK](http://www.rtxi.org/wp-content/uploads/2011/04/alphasyn.png)
 
