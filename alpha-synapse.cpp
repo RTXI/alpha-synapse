@@ -20,7 +20,7 @@
  * An alpha-type synapse
  */
 
-#include <alphasyn.h>
+#include <alpha-synapse.h>
 #include <math.h>
 #include <QtGui>
 

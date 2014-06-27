@@ -1,9 +1,9 @@
 
-PLUGIN_NAME = alphasyn
+PLUGIN_NAME = alpha_synapse
 
-HEADERS = alphasyn.h
+HEADERS = alpha-synapse.h
 
-SOURCES = alphasyn.cpp \
+SOURCES = alpha-synapse.cpp 
 
 LIBS =
 
