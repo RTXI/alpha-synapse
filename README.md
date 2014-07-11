@@ -3,7 +3,7 @@
 **Requirements:** None  
 **Limitations:** None  
 
-![EDIT THIS LINK](http://www.rtxi.org/wp-content/uploads/2011/04/alphasyn.png)
+![Alpha Synapse GUI](alpha-synapse.png)
 
 This module creates an artificial synapse where the fixed conductance change is described by an alpha function. The fixed conductance waveform is pre-computed according to: 
 
