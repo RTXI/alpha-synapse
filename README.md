@@ -9,7 +9,7 @@
 <!--start-->
 This module creates an artificial synapse where the fixed conductance change is described by an alpha function. The fixed conductance waveform is pre-computed according to:  
 
-[G=G_{max}*\frac{t}{\tau}*exp(-\frac{t-\tau}{\tau})](http://bit.ly/1zWcc5u)
+[G=G_{max}*\frac{t}{\tau}*exp(-\frac{t-\tau}{\tau})](http://bit.ly/1zWdbmk)
 
 The current is computed according to Ohm's Law:
 
