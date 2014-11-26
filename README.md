@@ -5,9 +5,13 @@
 
 ![Alpha Synapse GUI](alpha-synapse.png)
 
-This module creates an artificial synapse where the fixed conductance change is described by an alpha function. The fixed conductance waveform is pre-computed according to: 
+This module creates an artificial synapse where the fixed conductance change is described by an alpha function. The fixed conductance waveform is pre-computed according to:  
+
+<img src="http://bit.ly/1zWcc5u" align="center" border="0" alt="G=G_{max}*\frac{t}{\tau}*exp(- \frac{t-\tau}{\tau}) " width="236" height="43" />
 
 The current is computed according to Ohm's Law:
+
+<img src="http://bit.ly/1zWcnOg" align="center" border="0" alt="I_{syn}=G*(V_{m}-E_{syn})" width="181" height="21" />
 
 This conductance is triggered by an event indicated by a value of “1″ on input(1). This can be used to generate a spike-triggered synaptic connection using the [Spike Detector module](https://github.com/RTXI/spike-detector).
 
