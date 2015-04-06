@@ -56,6 +56,7 @@ alphasyn::alphasyn(void) :
   initStimulus();
   update( INIT);
   refresh();
+  QTimer::singleShot(0, this, SLOT(resizeMe()));
 }
 
 alphasyn::~alphasyn(void)
