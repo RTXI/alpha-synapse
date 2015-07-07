@@ -16,13 +16,8 @@
 
  */
 
-/*
- * An alpha-type synapse
- */
-
 #include <alpha-synapse.h>
 #include <math.h>
-#include <QtGui>
 
 extern "C" Plugin::Object *
 createRTXIPlugin(void)
@@ -32,10 +27,10 @@ createRTXIPlugin(void)
 
 static DefaultGUIModel::variable_t vars[] =
   {
-    { "Vm", "Membrane potential (V)", DefaultGUIModel::INPUT, },
+    { "Vm (V)", "Membrane potential (V)", DefaultGUIModel::INPUT, },
     { "Spike State", "Spike State (=1 to trigger synapse)",
         DefaultGUIModel::INPUT, },
-    { "Isyn", "Output current (A)", DefaultGUIModel::OUTPUT, },
+    { "Isyn (A)", "Output current (A)", DefaultGUIModel::OUTPUT, },
     { "Gmax (nS)", "Maximum synaptic conductance for stimulus",
         DefaultGUIModel::PARAMETER | DefaultGUIModel::DOUBLE, },
     { "Time Constant tau (ms)", "Time constant for alpha-shaped conductance",
@@ -56,7 +51,7 @@ alphasyn::alphasyn(void) :
   initStimulus();
   update( INIT);
   refresh();
-  QTimer::singleShot(0, this, SLOT(resizeMe()));
+  resizeMe();
 }
 
 alphasyn::~alphasyn(void)
