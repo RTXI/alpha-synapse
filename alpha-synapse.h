@@ -26,38 +26,27 @@
 
 class alphasyn : public DefaultGUIModel
 {
+	public:
+		alphasyn(void);
+		virtual ~alphasyn(void);
+		virtual void execute(void);
 
-public:
+	protected:
+		virtual void update(DefaultGUIModel::update_flags_t);
 
-  alphasyn(void);
-  virtual
-  ~alphasyn(void);
+	private:
+		void initParameters();
+		void initStimulus(); // creates template conductance array
+		double* arrGsyn; // holds the stimulus conductance values
+		int nsamples; // holds the size of arrGsyn
+		int Gsyncount; // holds current arrGsyn position
 
-  virtual void
-  execute(void);
-
-protected:
-
-  virtual void
-  update(DefaultGUIModel::update_flags_t);
-
-private:
-
-  void
-  initParameters();
-  void
-  initStimulus(); // creates template conductance array
-  double* arrGsyn; // holds the stimulus conductance values
-  int nsamples; // holds the size of arrGsyn
-  int Gsyncount; // holds current arrGsyn position
-
-  double Vm;
-  double gmax;
-  double tau;
-  double esyn;
-  double dt; // system period
-  double Iout;
-  double systime;
-  long long count;
-
+		double Vm;
+		double gmax;
+		double tau;
+		double esyn;
+		double dt; // system period
+		double Iout;
+		double systime;
+		long long count;
 };
