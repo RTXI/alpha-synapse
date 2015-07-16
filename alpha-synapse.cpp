@@ -27,17 +27,17 @@ createRTXIPlugin(void)
 
 static DefaultGUIModel::variable_t vars[] =
   {
-    { "Vm (V)", "Membrane potential (V)", DefaultGUIModel::INPUT, },
+    { "Vm", "Membrane potential (V)", DefaultGUIModel::INPUT, },
     { "Spike State", "Spike State (=1 to trigger synapse)",
         DefaultGUIModel::INPUT, },
-    { "Isyn (A)", "Output current (A)", DefaultGUIModel::OUTPUT, },
-    { "Gmax (nS)", "Maximum synaptic conductance for stimulus",
+    { "Isyn", "Output current (A)", DefaultGUIModel::OUTPUT, },
+    { "Gmax", "Maximum synaptic conductance for stimulus (nS)",
         DefaultGUIModel::PARAMETER | DefaultGUIModel::DOUBLE, },
-    { "Time Constant tau (ms)", "Time constant for alpha-shaped conductance",
+    { "Tau", "Time constant for alpha-shaped conductance (ms)",
         DefaultGUIModel::PARAMETER | DefaultGUIModel::DOUBLE, },
-    { "Esyn (mV)", "Reversal potential for conductance",
+    { "Esyn", "Reversal potential for conductance (mV)",
         DefaultGUIModel::PARAMETER | DefaultGUIModel::DOUBLE, },
-    { "Time (s)", "Time (s)", DefaultGUIModel::STATE, }, };
+    { "Time", "Time (s)", DefaultGUIModel::STATE, }, };
 
 static size_t num_vars = sizeof(vars) / sizeof(DefaultGUIModel::variable_t);
 
