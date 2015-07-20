@@ -29,14 +29,14 @@ static DefaultGUIModel::variable_t vars[] =
 	{ "Vm", "Membrane potential (V)", DefaultGUIModel::INPUT, },
 	{ "Spike State", "Spike State (=1 to trigger synapse)",
 	  DefaultGUIModel::INPUT, },
-	{ "Isyn", "Output current (A)", DefaultGUIModel::OUTPUT, },
-	{ "Gmax", "Maximum synaptic conductance for stimulus (nS)",
+	{ "Isyn (A)", "Output current (A)", DefaultGUIModel::OUTPUT, },
+	{ "Gmax (nS)", "Maximum synaptic conductance for stimulus (nS)",
 	  DefaultGUIModel::PARAMETER | DefaultGUIModel::DOUBLE, },
-	{ "Tau", "Time constant for alpha-shaped conductance (ms)",
+	{ "Tau (ms)", "Time constant for alpha-shaped conductance (ms)",
 	  DefaultGUIModel::PARAMETER | DefaultGUIModel::DOUBLE, },
-	{ "Esyn", "Reversal potential for conductance (mV)",
+	{ "Esyn (mV)", "Reversal potential for conductance (mV)",
 	  DefaultGUIModel::PARAMETER | DefaultGUIModel::DOUBLE, },
-	{ "Time", "Time (s)", DefaultGUIModel::STATE, }, 
+	{ "Time (s)", "Time (s)", DefaultGUIModel::STATE, }, 
 };
 
 static size_t num_vars = sizeof(vars) / sizeof(DefaultGUIModel::variable_t);
