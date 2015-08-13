@@ -77,13 +77,13 @@ void alphasyn::update(DefaultGUIModel::update_flags_t flag)
 	switch (flag) {
 	case INIT:
 		setParameter("Gmax (nS)", QString::number(gmax * 1e9)); // initialized in S, display in nS
-		setParameter("Time Constant tau (ms)", QString::number(tau * 1e3)); // initialized in s, display in ms
+		setParameter("Tau (ms)", QString::number(tau * 1e3)); // initialized in s, display in ms
 		setParameter("Esyn (mV)", QString::number(esyn * 1e3)); // initialized in V, display in mV
 		setState("Time (s)", systime);
 		break;
 	case MODIFY:
 		gmax = getParameter("Gmax (nS)").toDouble() * 1e-9; // set by user in nS, change to S
-		tau = getParameter("Time Constant tau (ms)").toDouble() * 1e-3; // set by user in ms, change to s
+		tau = getParameter("Tau (ms)").toDouble() * 1e-3; // set by user in ms, change to s
 		esyn = getParameter("Esyn (mV)").toDouble() * 1e-3; // set by user in mV, change to V
 		initStimulus();
 		break;
