@@ -19,12 +19,15 @@ of this one.
 
 The fixed conductance waveform is pre-computed according to:
 
-<div style="text-align:center;">G=Gmax\*(t/tau)\*exp(-(t-tau)/tau))</div>
+```
+G = Gmax * (t/tau) * exp( -(t-tau)/tau) )
+```
 
-<br>
 The current is computed according to Ohm's Law:  
 
-<div style="text-align:center;">Isyn=G\*(Vm-Esyn)</div>
+```
+Isyn = G * (Vm-Esyn)
+```
 
 #### Input Channels
 1. input(0) – “Vm” : Membrane potential (V)
